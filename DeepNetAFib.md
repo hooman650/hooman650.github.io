@@ -25,7 +25,7 @@ nav-menu: false
 <section id="two" class="spotlights">
 	<section>
 		<a href="https://physionet.org/content/challenge-2017/1.0.0/" class="image">
-			<img src="assets/images/AfibExample.png" alt="" data-position="center center" />
+			<img src="assets/images/AfibExample.PNG" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
