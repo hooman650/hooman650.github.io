@@ -1,0 +1,38 @@
+# site settings
+title: AI4HEALTH
+subtitle: by Hooman Sedghamiz
+email: hooman.sedghamiz@gmail.com
+description: Employing Machine Learning (ML) and Deep Learning (DL) for good and solving some challenging healthcare related problems!
+baseurl: # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+street_address: 
+city: San Diego
+state: CA
+zip_code: 
+country: United States of America
+phone: 
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+500px_url:
+facebook_url:
+github_url:
+researchgate_url: 
+gitlab_url: https://github.com/hooman650
+googlescholar_url: https://scholar.google.com/citations?user=wOcEZPIAAAAJ&hl=en
+googleplus_url: 
+instagram_url: https://instagram.com/hooman650
+linkedin_url: https://www.linkedin.com/in/hooman-sedghamiz-449b0838
+pinterest_url:
+slack_url:
+twitter_url: 
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
