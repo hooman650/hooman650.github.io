@@ -3,7 +3,7 @@ layout: landing
 title: Identifying Atrial Fibrilliation (AFib) with Deep Convolutional Neural Networks (CNN)
 description: Harnesing the power of CNNs for one dimensional temporal signals
 image: assets/images/DNN.jpeg
-nav-menu: false
+nav-menu: true
 ---
 
 <!-- Main -->
@@ -111,7 +111,7 @@ nav-menu: false
 				<p>Our CNN is a modified Visual Geometry Group (VGG) network. 
 				I have rotated the network due to the limited space but you could read it from right to left. 
 				It starts with an input 2D convolutional 
-				layer that accepts images of size \(640 \times 480\) and has several drop-out and max-pooling layers. There 
+				layer that accepts images of size $640 \times 480$ and has several drop-out and max-pooling layers. There 
 				are two more convolutional layers each containing 32 kernels. Then we have a max pooling layer and drop-out that help fight
 				over-fitting. There are several more layers to further extract features.
 				I chose a standard and simple (trust me this is simple compared to the massive recent networks) 

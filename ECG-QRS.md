@@ -3,7 +3,7 @@ layout: post
 title: Unsupervised ECG QRS Detection
 description: What is a QRS complex and how one can detect it automatically?
 image: assets/images/pic08.jpg
-nav-menu: false
+nav-menu: true
 ---
 ECG is a biosignal produced by the heart. Each wave in the ECG represents an action performed by different chambers and compartments of the heart.
 Therefore, the abnormality or absense of each of these waves might indicate medically important diagnosis. In this post, we will get familiar with different waves in the ECG and implement a simple algorithm for QRS wave
@@ -121,7 +121,9 @@ signal, let's go ahead and see how we can further enhance the R peaks.
 ### 2. Differentiation and Squaring:
 
 Probably you remember the term differentiation from your college time. Hopefully, you remember that in order to calculate the slope of a function $$Y(t)$$ we can do the following:
-\\[ S = {y(t^{2}) - y(t^{1}) \over t^2 - t^1}. \\]
+{% raw %}
+$$S = {y(t^{2}) - y(t^{1}) \over t^2 - t^1}$$
+{% endraw %}
 
 Usually signals are sampled with a fixed rate ($${1 \over Fs} = { \delta t}$$, where $$Fs$$ is the sampling frequency), therefore the denominator of the equation above stays constant. Now, the nominator of the equation above increases as the difference between the amplitude of the two consecutive
 samples increase. Therefore, in order to highlight the sharper peaks in the signal (such as the R peaks), it might be useful to see where the slope is higher. Let's implement a simple single point
@@ -140,7 +142,9 @@ def Differentiate(ECG):
 </pre>
 
 The function above, simply computes a single point difference in the signal and squares it:
-\\[ ECG_{sq}[n] = {(ECG[n+1] - ECG[n])^2} \\]
+{% raw %}
+$$ECG_{sq}[n] = {(ECG[n+1] - ECG[n])^2}$$
+{% endraw %}
 
 <pre class="prettyprint lang-py">
 <code>
@@ -188,10 +192,15 @@ def MovingAverage(ECG,N=30):
 </pre>
 
 In case, you are curious what we did mathematically,
-\\[(ECG \star W)[n] = {\Sigma_{m=0}^{N+M-1} ECG[m]W[n-m]} \\]
+{% raw %}
+$$(ECG \star W)[n] = {\Sigma_{m=0}^{N+M-1} ECG[m]W[n-m]}$$
+{% endraw %}
 
 where, $$ECG$$ is our input signal with length $$N$$ and $$W$$ is our moving window with length $$M$$ and computed as:
-\\[W[n] = {1 \over 30}, \big[~\forall~n~\in~\[0,29\]~\big] \\]
+{% raw %}
+$$W[n] = {1 \over 30}, \big[~\forall~n~\in~\[0,29\]~\big]$$
+{% endraw %}
+
 Note that here I chose a moving average window of size 30 points that for the sampling frequency of 250 Hz in this signal seems appropriate.
 If you increase or decrease the sampling frequency, you may want to tune this value acordingly or make it a function of the sampling rate. 
 This is known as <i>full</i> way of performing the convolution where each overlap is considered. Let's see how the output signal looks like after this phase.
