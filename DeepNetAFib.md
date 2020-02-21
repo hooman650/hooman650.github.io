@@ -88,9 +88,9 @@ nav-menu: false
 				{% raw %}
 				$$STFT\{x[n]\}(m,\omega) \doteq \sum_{n=-\infty}^{\infty} x[n]w [n-m]e^{-j \omega n}$$
 				{% endraw %}
-				Where, $\omega$ is the frequency and \( w \) a window. If you are familiar with 
+				Where, $\omega$ is the frequency and $w$ a window. If you are familiar with 
 				the fourier transform you would notice that this simply is the fourier transform convolved with 
-				a window \(w\) of length \(m\). 
+				a window $w$ of length $m$. 
 				Now, please note that STFT suffers from the resolution problem, meaning that choosing a 
 				large window would degrade resolution in time and small widnow in frequency domain respectively. A 
 				better transformation would actually be taking the Continous Wavelet Transform (CWT) of the image which 
