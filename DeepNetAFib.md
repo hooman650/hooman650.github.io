@@ -85,7 +85,9 @@ nav-menu: false
 				<i>X</i> axis time respectively. As you can see this operation simply yields an image that could be passed 
 				as a normal image to a CNN for classification.
 				Mathematically speaking:
+				{% raw %}
 				$$STFT\{x[n]\}(m,\omega) \doteq \sum_{n=-\infty}^{\infty} x[n]w [n-m]e^{-j \omega n}$$
+				{% endraw %}
 				Where, $\omega$ is the frequency and \( w \) a window. If you are familiar with 
 				the fourier transform you would notice that this simply is the fourier transform convolved with 
 				a window \(w\) of length \(m\). 
