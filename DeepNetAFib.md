@@ -86,7 +86,7 @@ nav-menu: false
 				as a normal image to a CNN for classification.
 				Mathematically speaking:
 				$$STFT\{x[n]\}(m,\omega) \doteq \sum_{n=-\infty}^{\infty} x[n]w [n-m]e^{-j \omega n}$$
-				Where, \( \omega \) is the frequency and \( w \) a window. If you are familiar with 
+				Where, $\omega$ is the frequency and \( w \) a window. If you are familiar with 
 				the fourier transform you would notice that this simply is the fourier transform convolved with 
 				a window \(w\) of length \(m\). 
 				Now, please note that STFT suffers from the resolution problem, meaning that choosing a 
