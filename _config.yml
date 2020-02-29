@@ -31,6 +31,9 @@ pinterest_url:
 slack_url:
 twitter_url: 
 
+# Google Analytics
+google_analytics: UA-159393240-1
+
 # build settings
 markdown: kramdown
 
