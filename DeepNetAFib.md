@@ -3,7 +3,7 @@ layout: landing
 title: Identifying Atrial Fibrilliation (AFib) with Deep Convolutional Neural Networks (CNN)
 description: Harnesing the power of CNNs for one dimensional temporal signals
 image: assets/images/DNN.jpeg
-nav-menu: true
+nav-menu: false
 ---
 
 <!-- Main -->

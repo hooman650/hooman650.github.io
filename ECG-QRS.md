@@ -3,7 +3,7 @@ layout: post
 title: Unsupervised ECG QRS Detection
 description: What is a QRS complex and how one can detect it automatically?
 image: assets/images/pic08.jpg
-nav-menu: true
+nav-menu: false
 ---
 ECG is a biosignal produced by the heart. Each wave in the ECG represents an action performed by different chambers and compartments of the heart.
 Therefore, the abnormality or absense of each of these waves might indicate medically important diagnosis. In this post, we will get familiar with different waves in the ECG and implement a simple algorithm for QRS wave
